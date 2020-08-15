@@ -12,7 +12,7 @@ max_followers = 10000
 # authentication supported
 instagram = Instagram()
 instagram.with_credentials(my_username, my_password)
-instagram.login()
+instagram.login(two_step_verificator=True)
 account = instagram.get_account(my_username)
 
 # see who doesn't follow back
